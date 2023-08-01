@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/FilmFragment"
+        android:icon="@drawable/baseline_camera_roll_24"
+        android:title="@string/film"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/TvFragment"
+        android:icon="@drawable/baseline_live_tv_24"
+        android:title="@string/tv_show"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/FavoriteFragment"
+        android:icon="@drawable/baseline_bookmark_24"
+        android:title="@string/favorite"
+        android:enabled="true"/>
+</menu>

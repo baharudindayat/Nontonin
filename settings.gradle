@@ -14,3 +14,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Nontonin"
 include ':app'
+include ':favorite'
+include ':core'
+include ':core'
+include ':core'
