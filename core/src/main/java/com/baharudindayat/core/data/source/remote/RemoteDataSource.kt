@@ -17,7 +17,8 @@ class RemoteDataSource @Inject constructor(private val apiService: ApiService){
         //get data from remote api
         return flow {
             try {
-                val response = apiService.getMovie()
+                val auth = "bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3OGI1ZWFhOTE3NjI2ZjFhMDljOWJkZWFhZDBiODU5MyIsInN1YiI6IjY0YzMzNzgyYWY2ZTk0MDExZDZlZjFiYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.t_94nSQJalNyLMW3qeUw3mhSWuOAEldviKU35jRb9U4"
+                val response = apiService.getMovie(auth)
                 val dataArray = response.results
                 if (dataArray.isNotEmpty()){
                     emit(ApiResponse.Success(response.results))
@@ -31,5 +32,4 @@ class RemoteDataSource @Inject constructor(private val apiService: ApiService){
         }.flowOn(Dispatchers.IO)
     }
 
-    
 }

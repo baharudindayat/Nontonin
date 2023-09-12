@@ -23,7 +23,7 @@
             <ImageView
                 android:id="@+id/iv_detail_poster"
                 android:layout_width="match_parent"
-                android:layout_height="480dp"
+                android:layout_height="630dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/image_poster"
                 android:contentDescription="@string/openheimer" />
@@ -52,14 +52,14 @@
             android:paddingHorizontal="30dp">
 
             <TextView
-            android:id="@+id/tv_detail_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="@string/openheimer"
-            android:textAlignment="center"
-            android:textSize="28sp"
-            android:textStyle="bold" />
+                android:id="@+id/tv_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/openheimer"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"

@@ -20,7 +20,7 @@ class DatabaseModule {
     fun provideDatabase(@ApplicationContext context: Context): MovieDatabase = Room.databaseBuilder(
         context,
         MovieDatabase::class.java, "Nontonin.db"
-    ).fallbackToDestructiveMigration().build()
+    ).fallbackToDestructiveMigration().allowMainThreadQueries().build()
 
     @Provides
     fun provideTourismDao(database: MovieDatabase): MovieDao = database.MovieDao()

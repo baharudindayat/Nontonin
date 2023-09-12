@@ -22,9 +22,6 @@ data class ResultsItem(
 	@field:SerializedName("title")
 	val title: String,
 
-	@field:SerializedName("genre_ids")
-	val genreIds: List<Int>,
-
 	@field:SerializedName("poster_path")
 	val posterPath: String,
 

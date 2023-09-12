@@ -20,14 +20,8 @@ data class MovieEntity(
     @ColumnInfo(name = "original_title")
     val originalTitle: String,
 
-    @ColumnInfo(name = "video")
-    val video: Boolean,
-
     @ColumnInfo(name = "title")
     val title: String,
-
-    @ColumnInfo(name = "genre_ids")
-    val genreIds: List<Int>,
 
     @ColumnInfo(name = "poster_path")
     val posterPath: String,

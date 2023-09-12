@@ -9,5 +9,14 @@
         android:id="@+id/FilmFragment"
         android:name="com.baharudindayat.nontonin.presentation.ui.film.FilmFragment"
         android:label="fragment_film"
-        tools:layout="@layout/fragment_film"/>
+        tools:layout="@layout/fragment_film">
+    </fragment>
+
+    <fragment
+        android:id="@+id/SettingFragment"
+        android:name="com.baharudindayat.nontonin.presentation.ui.setting.SettingsFragment"
+        android:label="fragment settings"
+        tools:layout="@xml/root_preferences"/>
+
+
 </navigation>
