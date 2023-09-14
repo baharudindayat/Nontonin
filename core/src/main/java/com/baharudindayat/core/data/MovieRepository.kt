@@ -8,8 +8,10 @@ import com.baharudindayat.core.domain.model.Movie
 import com.baharudindayat.core.domain.repository.MoviesRepository
 import com.baharudindayat.core.utils.AppExecutors
 import com.baharudindayat.core.utils.DataMapper
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.withContext
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -26,7 +28,6 @@ class MovieRepository @Inject constructor(
                     DataMapper.mapEntitiesToDomain(it)
                 }
             }
-
             override fun shouldFetch(data: List<Movie>?): Boolean =
                 true
 
@@ -35,7 +36,9 @@ class MovieRepository @Inject constructor(
 
             override suspend fun saveCallResult(data: List<ResultsItem>) {
                 val movieList = DataMapper.mapResponsesToEntities(data)
-                localDataSource.insertMovie(movieList)
+                withContext(Dispatchers.IO) {
+                    localDataSource.insertMovie(movieList)
+                }
             }
         }.asFlow()
 
