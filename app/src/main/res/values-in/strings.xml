@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nontonin</string>
+    <string name="title_favorite">Module Favorite</string>
+    <string name="film">Film</string>
+    <string name="tv_show">Ftv</string>
+    <string name="favorite">Kesukaan</string>
+    <string name="hello_blank_fragment">Fragment Kosong</string>
+    <string name="messages_header">Pesan</string>
+    <string name="sync_header">Sinkron</string>
+    <string name="signature_title">Tanda Tangan</string>
+    <string name="reply_title">Default Icon</string>
+    <string name="sync_title">sinkronisasi email</string>
+    <string name="attachment_title">otomatis download file</string>
+    <string name="attachment_summary_on">otomatis download file</string>
+    <string name="attachment_summary_off">hanya download jika permintaan manual</string>
+    <string name="settings">pengaturan</string>
+    <string name="openheimer">openheimer</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor tincidunt lacus vitae ultrices. Nunc a ultricies justo, a dictum nibh. Aenean euismod dolor augue, id accumsan turpis mollis vitae. Duis eros orci, laoreet ut lorem id, hendrerit tempor felis. Integer posuere dolor et turpis sollicitudin posuere. Nam pellentesque, lectus sit amet euismod faucibus, leo ante imperdiet lacus, ut auctor neque ipsum eu metus. Sed est metus, euismod molestie ligula vel, sollicitudin congue ex.</string>
+    <string name="overview">Ringkasan</string>
+    <string name="rating">Peringkat</string>
+    <string name="release">Tahun Rilis</string>
+    <string name="_8_9">8.9</string>
+    <string name="_2023_07_22">2023-07-22</string>
+    <string name="title_favoritefeature">Kesukaan</string>
+    <string name="title_dynamicfavorite">FavoritDinamis</string>
+    <string name="change_language">ganti bahasa</string>
+    <string name="language">bahasa</string>
+    <string name="error_page">halaman error</string>
+</resources>

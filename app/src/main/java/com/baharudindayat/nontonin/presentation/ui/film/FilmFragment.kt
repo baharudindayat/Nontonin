@@ -2,19 +2,16 @@ package com.baharudindayat.nontonin.presentation.ui.film
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.baharudindayat.core.data.Resource
 import com.baharudindayat.nontonin.databinding.FragmentFilmBinding
 import com.baharudindayat.nontonin.presentation.adapter.ListFilmAdapter
 import com.baharudindayat.nontonin.presentation.ui.detail.DetailActivity
-import com.baharudindayat.nontonin.presentation.ui.detail.DetailFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -37,28 +34,29 @@ class FilmFragment : Fragment() {
 
         if (activity != null) {
             val filmAdapter = ListFilmAdapter()
-            val bundle = Bundle()
             filmAdapter.listener = { selectedData ->
 
                 val intent = Intent(activity, DetailActivity::class.java)
                 intent.putExtra(DetailActivity.EXTRA_DATA, selectedData)
                 startActivity(intent)
 
-//                val action = FilmFragmentDirections.actionFilmFragmentToDetailFragment().apply {
-//                    bundle.putParcelable(DetailFragment.EXTRA_DATA, selectedData)
-//                    DetailFragment().arguments = bundle
-//                }
-//                findNavController().navigate(action)
             }
 
             filmViewModel.movie.observe(viewLifecycleOwner){ movie ->
                 if (movie != null){
                     when(movie){
-                        is Resource.Loading -> {}
+                        is Resource.Loading -> {
+                            binding.progressLoading.visibility = View.VISIBLE
+                        }
                         is Resource.Success -> {
+                            binding.progressLoading.visibility = View.GONE
                             filmAdapter.setData(movie.data)
                         }
-                        is Resource.Error -> {}
+                        is Resource.Error -> {
+                            binding.progressLoading.visibility = View.GONE
+                            binding.rvFilm.visibility = View.GONE
+                            binding.rvFilm.visibility = View.VISIBLE
+                        }
                     }
                 }
             }

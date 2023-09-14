@@ -1,15 +1,14 @@
 package com.baharudindayat.nontonin.presentation
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
-import com.baharudindayat.nontonin.databinding.ActivityMainBinding
-import dagger.hilt.android.AndroidEntryPoint
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.baharudindayat.nontonin.R
+import com.baharudindayat.nontonin.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {

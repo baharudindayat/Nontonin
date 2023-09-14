@@ -18,5 +18,11 @@
         android:label="fragment settings"
         tools:layout="@xml/root_preferences"/>
 
+    <fragment
+        android:id="@+id/FavoriteFragment"
+        android:name="com.baharudindayat.dynamicfavorite.ui.FavoriteFragment"
+        android:label="Fragment Favorite"
+        tools:layout="@layout/fragment_favorite"/>
+
 
 </navigation>

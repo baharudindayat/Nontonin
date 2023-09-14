@@ -3,7 +3,6 @@ package com.baharudindayat.core.utils
 import com.baharudindayat.core.data.source.local.entity.MovieEntity
 import com.baharudindayat.core.data.source.remote.response.movie.ResultsItem
 import com.baharudindayat.core.domain.model.Movie
-import java.io.DataInput
 
 object DataMapper {
     fun mapResponsesToEntities(input: List<ResultsItem>): List<MovieEntity> {

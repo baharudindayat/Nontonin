@@ -9,7 +9,7 @@ import com.baharudindayat.core.utils.MovieDiffCallback
 import com.baharudindayat.nontonin.databinding.ItemListBinding
 import com.bumptech.glide.Glide
 
-class ListFilmAdapter () : RecyclerView.Adapter<ListFilmAdapter.ViewHolder>(){
+class ListFilmAdapter : RecyclerView.Adapter<ListFilmAdapter.ViewHolder>(){
 
     private val items = ArrayList<Movie>()
     var listener: ((Movie) -> Unit)? = null

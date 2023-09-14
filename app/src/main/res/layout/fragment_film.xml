@@ -5,11 +5,27 @@
     android:layout_height="match_parent"
     tools:context=".presentation.ui.film.FilmFragment">
 
+    <ProgressBar
+        android:id="@+id/progress_loading"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        android:layout_gravity="center" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_film"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingHorizontal="15dp"
         tools:listitem="@layout/item_list"/>
+
+    <ImageView
+        android:id="@+id/img_error"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/error_page"
+        android:src="@drawable/error_preview"
+        />
 
 </FrameLayout>
