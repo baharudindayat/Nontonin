@@ -14,16 +14,17 @@
         app:cardCornerRadius="16dp">
 
         <ImageView
-            android:id="@+id/iv_film_logo"
+            android:id="@+id/iv_FilmLogo"
             android:layout_width="150dp"
             android:layout_height="220dp"
             android:scaleType="fitCenter"
+            android:contentDescription="@string/detail_image_poster"
             android:src="@drawable/image_poster" />
 
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/tv_film_name"
+        android:id="@+id/tv_FilmName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -34,12 +35,12 @@
         tools:text="Openheimer" />
 
     <TextView
-        android:id="@+id/tv_release_date"
+        android:id="@+id/tv_ReleaseDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="8dp"
-        android:text="22 July 2002" />
+        android:text="@string/_22_july_2002" />
 
 
 
