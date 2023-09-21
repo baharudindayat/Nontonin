@@ -16,4 +16,5 @@
     <string name="change_language">ganti bahasa</string>
     <string name="language">bahasa</string>
     <string name="error_page">halaman error</string>
+    <string name="film_name">nama film</string>
 </resources>
