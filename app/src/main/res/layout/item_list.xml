@@ -18,8 +18,8 @@
             android:layout_width="150dp"
             android:layout_height="220dp"
             android:scaleType="fitCenter"
-            android:contentDescription="@string/detail_image_poster"
-            android:src="@drawable/image_poster" />
+            android:background="#dddddd"
+            android:contentDescription="@string/detail_image_poster"/>
 
     </androidx.cardview.widget.CardView>
 
@@ -32,7 +32,7 @@
         android:layout_marginBottom="5dp"
         android:textSize="14sp"
         android:textStyle="bold"
-        tools:text="Openheimer" />
+        tools:text="@string/film_name" />
 
     <TextView
         android:id="@+id/tv_ReleaseDate"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="8dp"
-        android:text="@string/_22_july_2002" />
+        android:text="@string/release" />
 
 
 

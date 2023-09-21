@@ -58,9 +58,9 @@ class FavoriteFragment : Fragment() {
                 startActivity(intent)
             }
             favoriteViewModel.movie.observe(viewLifecycleOwner){ movie ->
-                if (movie != null){
-                    favoriteAdapter.setData(movie)
-                }
+                favoriteAdapter.setData(movie)
+                binding.ivEmpty.rootView.visibility =
+                    if (movie.isNotEmpty()) View.GONE else View.VISIBLE
             }
             with(binding.rvFilm){
                 layoutManager = GridLayoutManager(context,2)

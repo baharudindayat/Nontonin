@@ -34,5 +34,6 @@
     <string name="error_page">error page</string>
     <string name="detail_image_poster" translatable="false">Detail Image Poster</string>
     <string name="_22_july_2002" translatable="false">22 July 2002</string>
+    <string name="film_name">Film name</string>
 
 </resources>
